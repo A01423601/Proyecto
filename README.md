@@ -3,7 +3,7 @@
 ## Contexto
 La situación actual ha tenido gran impacto en la sociedad, la pandemia ha causado que las personas permanezcan en su hogar y así evitar que el virus se expanda. 
 Esto ha traído repercusiones en los establecimientos locales, como las cafeterías. Progresivamente nuestras actividades habituales se reincorporan en nuestro día a día.
-Las cafeterías vuelven a abrir y buscan recuperarse, además de adaptarse a la nueva normalidad. Este programa tiene como objetivo apoyar a los cafés para que su servicio sea efectivo y dinámico y adecuado para la circunstancia actual, donde se busca que la interacción entre personas sea mínima para cuidar el bienestar de todos.
+Las cafeterías vuelven a abrir y buscan recuperarse, además de adaptarse a la nueva normalidad. Este programa tiene como objetivo apoyar a los cafés para que su servicio sea efectivo, dinámico y adecuado para la circunstancia actual, donde se busca que la interacción entre personas sea mínima para cuidar el bienestar de todos.
 A través del programa, el cliente tiene la oportunidad de observar el menú del café, con alimentos y bebidas, al igual que los precios y realizar su pedido. Finalmente el usuario obtendrá su total de los productos que desea consumir.
 
 ## Algoritmo
