@@ -7,7 +7,7 @@ print("Ingresa tu nombre")
 nombre = str(input())
 
 
-tipo_menu= int(input("Selecciona el menu de tu preferencia, 0:alimentos/ *1:bebidas no disponibles*, "))
+tipo_menu= int(input("Selecciona el menu de tu preferencia, 0:alimentos/ 1:bebidas, "))
 
 # Funciones (alimentos)
 
@@ -24,7 +24,7 @@ def cuenta_total_alimentos(cantidad_panini, cantidad_pan, cantidad_dona ):
     
     return total_panini(cantidad_panini) + total_pan(cantidad_pan) + total_dona(cantidad_dona)
 
-if (tipo_menu == 0):
+if (tipo_menu == 0):            #Este if fue agregado en la entrega pasada, no obstante, es indispensable para esta entrega
     print("Contamos con los siguientes platillos",nombre)
     print("Panini de pollo, $100")
     print("Pan frances, $150")
@@ -41,8 +41,13 @@ if (tipo_menu == 0):
     print("Y será un total de:", cuenta_total_alimentos(cantidad_panini, cantidad_pan, cantidad_dona), "pesos")
 
 
+elif (tipo_menu == 1):            #Este if es fundamental para la eleccion de menus
+    print("Contamos con los siguientes bebidas",nombre)
+    print("Jugo de naranja, $30")
+    print("Cafe, $20")
+    print("Malteada vainilla, $50")
 
 
-
-
+else:
+    print ("No contamos con ese menu")
 
