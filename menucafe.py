@@ -1,11 +1,18 @@
-"""Ximena Islas A01423601 "Coffee House"""
-
+"""
+Ximena Islas A01423601 
+Proyecto Coffee House python
+Menu Cafeteria
+El programa muestra el menu de la cafeteria y realiza la cuenta
+de lo que el cliente ha solicitado
+"""
 
 print("Bienvenido a Coffee House, tu cafeteria local favorita")
 
 print("Ingresa tu nombre")
 nombre = str(input())
 
+
+"""Listas"""
 
 lista_alimentos=[]
 lista_bebidas=[]
@@ -49,7 +56,7 @@ def cuenta_bebidas(cantidad_jugo, cantidad_cafe, cantidad_malteada ):
     return total_jugo(cantidad_jugo) + total_cafe(cantidad_cafe) + total_malteada(cantidad_malteada)
 
 
-
+"""Parte principal del programa"""
 
 entrar_menu= str(input("Ingresa ´entrar´ para obsevar al menú de Coffee House o ingresa otro texto para marcharte del menu: "))
 
@@ -57,7 +64,7 @@ def menu():
     while entrar_menu == "entrar":
         """Se crea un ciclo para que el usuario tenga la posibilidad de observar los menus las veces deseadas, hasta seleccionar la opcion de salir el menu"""
 
-        tipo_menu= int(input("Selecciona el menu de tu preferencia, 0:alimentos/ 1:bebidas/ 2: total/ 3:salir del menu "))
+        tipo_menu= int(input("Selecciona el menu de tu preferencia \n 0:alimentos \n 1:bebidas \n 2: total \n 3:salir del menu \n"))
 
 
         if (tipo_menu == 0):
@@ -134,7 +141,7 @@ def menu():
         elif (tipo_menu == 2):
             """Si el usuario selecciona la opcion de total, el total sera reflejado"""
 
-            tipo_cuenta= int(input("Introduce el numero de la cuenta que deseas: 0:cuenta alimentos/ 1:cuenta bebidas/ 2:cuenta alimentos y bebidas "))
+            tipo_cuenta= int(input("Introduce el numero de la cuenta que deseas: \n 0:cuenta alimentos \n 1:cuenta bebidas \n 2:cuenta alimentos y bebidas \n "))
                                
             if (tipo_cuenta==0):
                 print(nombre,"el numero de ordenes de alimentos que has solicitado son", numero_alimentos)
