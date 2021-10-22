@@ -7,7 +7,39 @@ el usuario selecciona los servicios que desea solicitar y
 el programa realiza la cuenta de lo que el cliente ha solicitado
 """
 
+
+"""Funcion datetime"""
+
+"""
+datetime es un módulo de la biblioteca de Python la cual nos
+apoya a conocer la fecha y hora actuales.
+Decidí agregar esta función ya que no la había ultilizado previamente y
+encuentro muy interesante que podemos saber fecha y hora actuales
+e imprimirlas en nuestro programa.
+Considero que es escencial tener la fecha presente al trabajar en un cafe.
+
+Con datetime.now podemos saber la fecha y hora actuales.
+Agregando strftime, se toma como parametro el formato en el
+que se desea observar el string de la fecha y hora.
+Se cuenta con una gran cantidad de formatos para mostrar estas.
+El formato que coloqué fue el que me pareció mÁs correcto y comprensible.
+"""
+
+from datetime import datetime
+
+fecha_y_hora_actuales = datetime.now()
+
+fecha_y_hora = fecha_y_hora_actuales.strftime("%d / %m / %Y %H:%M")
+
+"""Formato: %d, día del mes; %m, mes; %Y, año; %H, hora; %M, minutos"""
+
+
+"""Inicio del porgrama"""
+
 print("Bienvenido a Coffee House, tu cafeteria local favorita")
+print("La fecha del día de hoy : ")
+print(fecha_y_hora)
+
 
 print("Ingresa tu nombre")
 nombre = str(input())
@@ -239,33 +271,8 @@ print(menu())
 
 
 
-"""datetime"""
-
-"""
-datetime es un módulo de la biblioteca de Python la cual nos
-apoya a conocer la fecha y hora actuales.
-Decidí agregar esta función ya que no la había ultilizado previamente y
-encuentro muy interesante que podemos saber fecha y hora actuales
-e imprimirlas en nuestro programa.
-Considero que es escencial tener la fecha presente al trabajar en un cafe.
-
-Con datetime.now podemos saber la fecha y hora actuales.
-Agregando strftime, se toma como parametro el formato en el
-que se desea observar el string de la fecha y hora.
-Se cuenta con una gran cantidad de formatos para mostrar estas.
-El formato que coloqué fue el que me pareció mÁs correcto y comprensible.
-"""
-
-from datetime import datetime
-
-fecha_y_hora_actuales = datetime.now()
-
-fecha_y_hora = fecha_y_hora_actuales.strftime("%d / %m / %Y %H:%M")
-
-"""Formato: %d, día del mes; %m, mes; %Y, año; %H, hora; %M, minutos"""
 
 
-print(fecha_y_hora)
 
 
 
